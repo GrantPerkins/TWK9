@@ -1,6 +1,6 @@
-# Trevor Weisma K9s
+# Trevor Wiersma K9s
 
-
+https://twk9s.com
 
 ## Available Scripts
 
