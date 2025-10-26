@@ -126,6 +126,10 @@ const HomeMobile: React.FC = () => {
                 </Box>
 
                 {/* Main Content */}
+                <Box className={classes.imageRow}>
+                    <img src={pup1} alt="Happy Dog 1" className={classes.pupImage} />
+                </Box>
+
                 <Box>
                     <Typography variant="body1" className={classes.mainContent}>
                         {home_content.main_content}
@@ -134,7 +138,6 @@ const HomeMobile: React.FC = () => {
 
                 {/* Image Row */}
                 <Box className={classes.imageRow}>
-                    <img src={pup1} alt="Happy Dog 1" className={classes.pupImage} />
                     <img src={pup2} alt="Happy Dog 2" className={classes.pupImage} />
                 </Box>
             </Container>
