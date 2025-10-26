@@ -136,7 +136,7 @@ const HomeDesktop: React.FC = () => {
             component={Link}
             to="/contact"
           >
-            {home_content.button_text}
+            {home_content.contact_button_text}
           </Button>
         </Box>
 
@@ -145,6 +145,17 @@ const HomeDesktop: React.FC = () => {
           <Typography variant="body1" className={classes.mainContent}>
             {home_content.main_content}
           </Typography>
+        </Box>
+
+        <Box textAlign="center" mt={5} mb={6}>
+          <Button
+            variant="contained"
+            className={classes.contactButton}
+            component={Link}
+            to="/reviews"
+          >
+            {home_content.review_button_text}
+          </Button>
         </Box>
 
         {/* Image Row */}

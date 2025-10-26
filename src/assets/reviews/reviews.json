@@ -1,12 +1,26 @@
 [
     {
-        "name": "Fake Dog",
-        "review_text": "Tanner was great with my dog! Loved him and would recommend to anyone!",
-        "image": "pup1.png"
+        "name": "Autumn",
+        "review_text": "I'm so thankful for TWK9! My sweet dog Autumn was always so shy and unsure of herself, but after her Board and Train, she's like a whole new girl confident, happy, and proud of herself. They were so patient and gentle with her, and I could tell she was cared for every step of the way. I'm beyond grateful for the love and confidence they helped her find!",
+        "image": "autumn.JPG",
+        "reviewer": "Lynn Pelhelm"
     },
     {
-        "name": "Roofus",
-        "review_text": "I love TWK9! Best company ever and I would trust Tanner with my dog always.",
-        "image": "pup2.png"
+        "name": "Liberty",
+        "review_text": "I can't say enough good things about Tanner at TWK9! My dog used to be reactive and aggressive toward other dogs. Walks were a nightmare, and I honestly thought I'd have to rehome him. After just a few weeks with Tanner, he came back calmer, confident, and totally changed. Tanner took the time to understand why my dog was acting out and built a plan that worked. Now we can walk past other dogs with zero issues. It's like night and day, worth every penny!",
+        "image": "liberty.JPG",
+        "reviewer": "Evan Case"
+    },
+    {
+        "name": "Dracaryus",
+        "review_text": "My girl Dracaryus used to react to every dog we passed, but after a 2-week Board and Train with TWK9, she's completely different. She's calm, focused, and I can take her places without stress. Huge difference totally worth it.",
+        "image": "draco.png",
+        "reviewer": "Paige Todd"
+    },
+    {
+        "name": "Remi",
+        "review_text": "Tanner is an awesome dog trainer! My dog Remi is a rescue and is afraid of his own shadow. He was terrified of men especially. Tanner was gentle and engaged with him in a fun way to help get him out of his shell. He really helped Remi become more confident and fulfilled.",
+        "image": "remi.jpg",
+        "reviewer": "Kylee Rutkiewicz"
     }
 ]

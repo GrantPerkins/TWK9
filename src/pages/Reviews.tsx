@@ -11,6 +11,7 @@ interface Review {
     name: string;
     review_text: string;
     image: string;
+    reviewer: string;
 }
 
 interface ReviewsProps {
@@ -88,7 +89,7 @@ const Reviews: React.FC<ReviewsProps> = ({ isMobile }) => {
                             <Typography variant={"h4"} className={classes.dogName}>{review.name}</Typography>
                             <img src={imgSrc} alt={review.name} className={classes.dogImage} />
                             <Typography className={classes.reviewText}>"{review.review_text}"</Typography>
-                            <Typography className={classes.reviewText}>- {review.name}'s owner </Typography>
+                            <Typography className={classes.reviewText}>- {review.reviewer}</Typography>
                         </Box>
                     );
                 })}
