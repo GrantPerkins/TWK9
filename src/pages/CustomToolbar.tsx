@@ -10,6 +10,7 @@ import {
   ListItem,
   ListItemButton,
   ListItemIcon,
+  ListItemText,
 } from "@mui/material";
 import { Link } from "react-router-dom";
 import {
@@ -17,6 +18,7 @@ import {
   Home as HomeIcon,
   ContactMail as ContactMailIcon,
   Image as ImageIcon,
+  AutoGraph as AutoGraphIcon
 } from "@mui/icons-material";
 import twk9Logo from "../assets/twk9.png";
 
@@ -32,26 +34,20 @@ const useStyles = makeStyles((theme: any) => ({
     borderBottom: `2px solid ${theme.palette.secondary.main}`,
   },
   logo: {
-    height: 80,
+    height: 120,
     [theme.breakpoints.down("sm")]: {
-      height: 60,
+      height: 100,
     },
   },
   navLinks: {
     display: "flex",
     alignItems: "center",
     gap: "2rem",
-  },
-  linkButton: {
-    color: theme.palette.text.primary,
-    textTransform: "none",
-    fontWeight: 500,
-    "&:hover": {
-      color: theme.palette.primary.main,
-    },
+    fontSize: "2rem !important",
   },
   menuButton: {
     color: theme.palette.text.primary,
+    paddingRight: "2rem",
   },
   drawerPaper: {
     backgroundColor: theme.palette.background.paper,
@@ -75,13 +71,16 @@ const ToolbarDesktop: React.FC = () => {
       <Toolbar className={classes.toolbar}>
         <div className={classes.navLinks}>
           <img src={twk9Logo} alt="TWK9 Logo" className={classes.logo} />
-          <Button component={Link} to="/" className={classes.linkButton}>
+          <Button variant={"contained"} component={Link} to="/">
             Home
           </Button>
-          <Button component={Link} to="/contact" className={classes.linkButton}>
+          <Button variant={"contained"} component={Link} to="/contact">
             Contact
           </Button>
-          <Button component={Link} to="/gallery" className={classes.linkButton}>
+          <Button variant={"contained"} component={Link} to="/reviews">
+            Reviews
+          </Button>
+          <Button variant={"contained"} component={Link} to="/gallery">
             Gallery
           </Button>
         </div>
@@ -127,6 +126,7 @@ const ToolbarMobile: React.FC = () => {
               <ListItemIcon className={classes.icon}>
                 <HomeIcon className={classes.icon} />
               </ListItemIcon>
+              <ListItemText primary="Home" className={classes.icon} />
             </ListItemButton>
           </ListItem>
 
@@ -135,6 +135,16 @@ const ToolbarMobile: React.FC = () => {
               <ListItemIcon className={classes.icon}>
                 <ContactMailIcon className={classes.icon} />
               </ListItemIcon>
+              <ListItemText primary="Contact"  className={classes.icon}/>
+            </ListItemButton>
+          </ListItem>
+
+          <ListItem disablePadding className={classes.listItem}>
+            <ListItemButton component={Link} to="/reviews" onClick={toggleDrawer(false)}>
+              <ListItemIcon className={classes.icon}>
+                <AutoGraphIcon className={classes.icon} />
+              </ListItemIcon>
+              <ListItemText primary="Reviews"  className={classes.icon}/>
             </ListItemButton>
           </ListItem>
 
@@ -143,6 +153,7 @@ const ToolbarMobile: React.FC = () => {
               <ListItemIcon className={classes.icon}>
                 <ImageIcon className={classes.icon} />
               </ListItemIcon>
+              <ListItemText primary="Gallery" className={classes.icon} />
             </ListItemButton>
           </ListItem>
         </List>

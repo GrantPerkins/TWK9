@@ -14,10 +14,6 @@ import pup1 from "../../assets/pup1.png";
 import pup2 from "../../assets/pup2.png";
 import CustomFooter from "../CustomFooter";
 
-interface HomeProps {
-  isMobile: boolean;
-}
-
 const useStyles = makeStyles((theme: any) => ({
   root: {
     backgroundColor: theme.palette.background.default,
@@ -65,7 +61,7 @@ const useStyles = makeStyles((theme: any) => ({
     color: "#fff",
     padding: "1rem 2.5rem",
     fontSize: "1.25rem",
-    borderRadius: "50px",
+    borderRadius: "50px !important",
     fontWeight: 600,
     textTransform: "none",
     boxShadow: "0 4px 12px rgba(0,0,0,0.15)",
@@ -140,7 +136,7 @@ const HomeDesktop: React.FC = () => {
             component={Link}
             to="/contact"
           >
-            Contact Tanner to Book a Board & Train
+            {home_content.button_text}
           </Button>
         </Box>
 

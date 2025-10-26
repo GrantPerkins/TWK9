@@ -1,10 +1,6 @@
 import React from "react";
 import { makeStyles } from "@mui/styles";
 
-interface HomeProps {
-    isMobile: boolean;
-}
-
 const useStyles = makeStyles((theme: any) => ({
     footer: {
         textAlign: "center",
@@ -21,7 +17,7 @@ const Footer: React.FC = () => {
 
     return (
         <footer className={classes.footer}>
-            © {new Date().getFullYear()} Tanner Weisma K9s Dog Training. All Rights Reserved.
+            © {new Date().getFullYear()} Tanner Wiersma K9s Dog Training. All Rights Reserved.
         </footer>
     );
 }

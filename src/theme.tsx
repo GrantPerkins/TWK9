@@ -4,7 +4,7 @@ const theme = createTheme({
   palette: {
     mode: "light",
     primary: {
-      main: "#c62828", // red accent
+      main: "#a83232", // red accent
     },
     secondary: {
       main: "#757575", // grey accent
