@@ -1,12 +1,13 @@
 {
   "files": {
-    "main.js": "/static/js/main.2f2cde51.js",
+    "main.js": "/static/js/main.e5c06c02.js",
     "static/js/453.2818e405.chunk.js": "/static/js/453.2818e405.chunk.js",
     "static/media/draco.png": "/static/media/draco.2e25956046dc9a1f3bef.png",
     "static/media/pup2.png": "/static/media/pup2.e3e5ecf47577c749129f.png",
     "static/media/autumn.JPG": "/static/media/autumn.98fc7e75df4334179733.JPG",
     "static/media/remi.jpg": "/static/media/remi.afba65014eb20f0abdf2.jpg",
     "static/media/IMG_1367.JPEG": "/static/media/IMG_1367.283d5fd00319a9e0addd.JPEG",
+    "static/media/sydney.jpg": "/static/media/sydney.cceef7596190c4ecdf48.jpg",
     "static/media/IMG_6940.JPEG": "/static/media/IMG_6940.4fb0c21189f3863cbe91.JPEG",
     "static/media/pup1.png": "/static/media/pup1.4a87bcb36ce65d67cb8e.png",
     "static/media/image0.jpeg": "/static/media/image0.a70ac4a5d5d21fa05a2c.jpeg",
@@ -17,10 +18,10 @@
     "static/media/IMG_6980.jpg": "/static/media/IMG_6980.2f8c88ebde1fc6e54965.jpg",
     "static/media/IMG_4618.jpg": "/static/media/IMG_4618.532f82336522dd997b75.jpg",
     "index.html": "/index.html",
-    "main.2f2cde51.js.map": "/static/js/main.2f2cde51.js.map",
+    "main.e5c06c02.js.map": "/static/js/main.e5c06c02.js.map",
     "453.2818e405.chunk.js.map": "/static/js/453.2818e405.chunk.js.map"
   },
   "entrypoints": [
-    "static/js/main.2f2cde51.js"
+    "static/js/main.e5c06c02.js"
   ]
 }
