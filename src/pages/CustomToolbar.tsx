@@ -47,7 +47,7 @@ const useStyles = makeStyles((theme: any) => ({
   },
   menuButton: {
     color: theme.palette.text.primary,
-    paddingRight: "3rem",
+    paddingRight: "2rem !important",
   },
   drawerPaper: {
     backgroundColor: theme.palette.background.paper,
