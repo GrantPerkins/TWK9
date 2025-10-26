@@ -1,26 +1,31 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { ThemeProvider as MuiThemeProvider } from "@mui/material/styles";
+import { ThemeProvider as StylesThemeProvider } from "@mui/styles";
+import CssBaseline from "@mui/material/CssBaseline";
+import theme from "./theme";
 
-function App() {
+import Home from "./pages/home/Home";
+// import Contact from "./pages/Contact";
+// import Gallery from "./pages/Gallery";
+
+const App: React.FC = () => {
+  const isMobile = window.innerWidth < 768;
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <MuiThemeProvider theme={theme}>
+      <StylesThemeProvider theme={theme}>
+        <CssBaseline />
+        <Router basename="/TWK9">
+          <Routes>
+            <Route path="/" element={<Home isMobile={isMobile} />} />
+            {/* <Route path="/contact" element={<Contact isMobile={isMobile} />} />
+            <Route path="/gallery" element={<Gallery isMobile={isMobile} />} /> */}
+          </Routes>
+        </Router>
+      </StylesThemeProvider>
+    </MuiThemeProvider>
   );
-}
+};
 
 export default App;
