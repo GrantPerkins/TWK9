@@ -37,6 +37,7 @@ const useStyles = makeStyles((theme: any) => ({
         fontWeight: 700,
         marginBottom: theme.spacing(4),
         fontSize: "2rem",
+        paddingTop: "1rem"
     },
     reviewBox: {
         display: "flex",
@@ -74,7 +75,7 @@ const Reviews: React.FC<ReviewsProps> = ({ isMobile }) => {
         <div className={classes.root}>
             <CustomToolbar isMobile={isMobile} />
 
-            <Typography variant={"h1"} className={classes.title}>Reviews</Typography>
+            <Typography variant={"h3"} className={classes.title}>Reviews</Typography>
             <Container maxWidth="md" className={classes.contentWrapper}>
 
 
@@ -84,7 +85,7 @@ const Reviews: React.FC<ReviewsProps> = ({ isMobile }) => {
 
                     return (
                         <Box key={index} className={classes.reviewBox}>
-                            <Typography variant={"h3"} className={classes.dogName}>{review.name}</Typography>
+                            <Typography variant={"h4"} className={classes.dogName}>{review.name}</Typography>
                             <img src={imgSrc} alt={review.name} className={classes.dogImage} />
                             <Typography className={classes.reviewText}>"{review.review_text}"</Typography>
                             <Typography className={classes.reviewText}>- {review.name}'s owner </Typography>
@@ -92,7 +93,6 @@ const Reviews: React.FC<ReviewsProps> = ({ isMobile }) => {
                     );
                 })}
             </Container>
-
             <CustomFooter />
         </div>
     );

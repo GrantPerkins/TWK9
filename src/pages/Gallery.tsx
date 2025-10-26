@@ -31,6 +31,7 @@ const useStyles = makeStyles((theme: any) => ({
     fontWeight: 700,
     marginBottom: theme.spacing(4),
     fontSize: "2rem",
+    paddingTop: "1rem"
   },
   grid: {
     display: "grid",
@@ -52,7 +53,7 @@ const Gallery: React.FC<GalleryProps> = ({ isMobile }) => {
   return (
     <div className={classes.root}>
       <CustomToolbar isMobile={isMobile} />
-      <Typography variant="h1" className={classes.title}>Gallery</Typography>
+      <Typography variant="h3" className={classes.title}>Gallery</Typography>
 
       <Container maxWidth="md" className={classes.contentWrapper}>
 
