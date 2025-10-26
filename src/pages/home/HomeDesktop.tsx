@@ -76,7 +76,6 @@ const useStyles = makeStyles((theme: any) => ({
     // margin: "0 auto",
     color: theme.palette.text.secondary,
     lineHeight: 1.8,
-    paddingBottom: "4rem",
     textAlign: "center",
   },
   imageRowOuter: {

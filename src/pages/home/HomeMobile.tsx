@@ -75,7 +75,6 @@ const useStyles = makeStyles((theme: any) => ({
         fontSize: "1rem",
         marginTop: "2rem",
         marginBottom: "2rem",
-        paddingBottom: "4rem",
         textAlign: "center",
     },
     imageRow: {
