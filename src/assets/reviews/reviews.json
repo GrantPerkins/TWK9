@@ -1,0 +1,12 @@
+[
+    {
+        "name": "Fake Dog",
+        "review_text": "Tanner was great with my dog! Loved him and would recommend to anyone!",
+        "image": "pup1.png"
+    },
+    {
+        "name": "Roofus",
+        "review_text": "I love TWK9! Best company ever and I would trust Tanner with my dog always.",
+        "image": "pup2.png"
+    }
+]

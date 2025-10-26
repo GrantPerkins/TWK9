@@ -7,8 +7,8 @@ import theme from "./theme";
 
 import Home from "./pages/home/Home";
 import Contact from "./pages/contact/Contact";
-// import Contact from "./pages/Contact";
-// import Gallery from "./pages/Gallery";
+import Gallery from "./pages/Gallery";
+import Reviews from "./pages/Reviews";
 
 const App: React.FC = () => {
   const isMobile = window.innerWidth < 768;
@@ -21,6 +21,8 @@ const App: React.FC = () => {
           <Routes>
             <Route path="/" element={<Home isMobile={isMobile} />} />
             <Route path="/contact" element={<Contact isMobile={isMobile} />} />
+            <Route path="/reviews" element={<Reviews isMobile={isMobile} />} />
+            <Route path="/gallery" element={<Gallery isMobile={isMobile} />} />
           </Routes>
         </Router>
       </StylesThemeProvider>
