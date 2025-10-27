@@ -46,6 +46,7 @@ const useStyles = makeStyles((theme: any) => ({
         fontWeight: 700,
         fontSize: "1.5rem",
         marginBottom: "0.75rem",
+        paddingBottom: "2rem !important"
     },
     blurb: {
         color: theme.palette.text.secondary,

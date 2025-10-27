@@ -70,7 +70,9 @@ const ToolbarDesktop: React.FC = () => {
     <AppBar position="static" elevation={0}>
       <Toolbar className={classes.toolbar}>
         <div className={classes.navLinks}>
-          <img src={twk9Logo} alt="TWK9 Logo" className={classes.logo} />
+          <Link to="/">
+            <img src={twk9Logo} alt="TWK9 Logo" className={classes.logo} />
+          </Link>
           <Button variant={"contained"} component={Link} to="/">
             Home
           </Button>
@@ -102,7 +104,9 @@ const ToolbarMobile: React.FC = () => {
     <>
       <AppBar position="static" elevation={0}>
         <Toolbar className={classes.toolbar}>
-          <img src={twk9Logo} alt="TWK9 Logo" className={classes.logo} />
+          <Link to="/">
+            <img src={twk9Logo} alt="TWK9 Logo" className={classes.logo} />
+          </Link>
           <IconButton
             edge="end"
             aria-label="menu"
@@ -135,7 +139,7 @@ const ToolbarMobile: React.FC = () => {
               <ListItemIcon className={classes.icon}>
                 <ContactMailIcon className={classes.icon} />
               </ListItemIcon>
-              <ListItemText primary="Contact"  className={classes.icon}/>
+              <ListItemText primary="Contact" className={classes.icon} />
             </ListItemButton>
           </ListItem>
 
@@ -144,7 +148,7 @@ const ToolbarMobile: React.FC = () => {
               <ListItemIcon className={classes.icon}>
                 <AutoGraphIcon className={classes.icon} />
               </ListItemIcon>
-              <ListItemText primary="Reviews"  className={classes.icon}/>
+              <ListItemText primary="Reviews" className={classes.icon} />
             </ListItemButton>
           </ListItem>
 
