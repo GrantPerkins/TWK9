@@ -53,6 +53,12 @@ const useStyles = makeStyles((theme: any) => ({
     backgroundColor: theme.palette.background.paper,
     width: 200,
   },
+  buttonText: {
+    fontSize: "1.25rem !important",
+    fontWeight: "700 !important",
+    textTransform: "none",
+    color: `${theme.palette.text.primary} !important`,
+  },
   listItem: {
     justifyContent: "center",
     padding: "1.5rem 0",
@@ -73,16 +79,16 @@ const ToolbarDesktop: React.FC = () => {
           <Link to="/">
             <img src={twk9Logo} alt="TWK9 Logo" className={classes.logo} />
           </Link>
-          <Button variant={"contained"} component={Link} to="/">
+          <Button component={Link} to="/" className={classes.buttonText}>
             Home
           </Button>
-          <Button variant={"contained"} component={Link} to="/contact">
+          <Button component={Link} to="/contact" className={classes.buttonText}>
             Contact
           </Button>
-          <Button variant={"contained"} component={Link} to="/reviews">
+          <Button component={Link} to="/reviews" className={classes.buttonText}>
             Reviews
           </Button>
-          <Button variant={"contained"} component={Link} to="/gallery">
+          <Button component={Link} to="/gallery" className={classes.buttonText}>
             Gallery
           </Button>
         </div>
